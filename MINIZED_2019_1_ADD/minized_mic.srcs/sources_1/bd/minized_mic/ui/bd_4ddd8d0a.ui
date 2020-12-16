@@ -1,0 +1,48 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1400 -y 490 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1400 -y 510 -defaultsOSRD
+preplace port pl_sw_1bit -pg 1 -lvl 4 -x 1400 -y 590 -defaultsOSRD
+preplace port pl_led_g -pg 1 -lvl 4 -x 1400 -y 730 -defaultsOSRD
+preplace port AUDIO_DAT -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port AUDIO_CLK -pg 1 -lvl 4 -x 1400 -y 180 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 580 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1210 -y 590 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 1210 -y 730 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 750 -y 340 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 230 -y 850 -defaultsOSRD
+preplace inst pdm_filt_0 -pg 1 -lvl 3 -x 1210 -y 270 -defaultsOSRD
+preplace inst microphone_mgr_0 -pg 1 -lvl 2 -x 750 -y 120 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 1210 -y 90 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 2 -x 750 -y 690 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 750 470 590 1050
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 950 430
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 480 610 1030
+preplace netloc processing_system7_0_FCLK_CLK2 1 1 2 460 20 1040
+preplace netloc processing_system7_0_FCLK_RESET2_N 1 1 1 440 120n
+preplace netloc microphone_mgr_0_AUDIO_PDM 1 2 1 1020 100n
+preplace netloc AUDIO_DAT_1 1 0 2 NJ 140 NJ
+preplace netloc microphone_mgr_0_AUDIO_CLK 1 2 2 1000J 180 NJ
+preplace netloc microphone_mgr_0_PDM_vector_full_STROBE 1 2 1 1010 80n
+preplace netloc microphone_mgr_0_audio_data_vector_OUT 1 2 1 1030 100n
+preplace netloc microphone_mgr_0_audio_captureCE 1 2 1 N 120
+preplace netloc pdm_filt_0_audio_ce 1 1 3 500 480 NJ 480 1380
+preplace netloc pdm_filt_0_audio_out 1 1 3 490 10 1050J 360 1370
+preplace netloc axi_gpio_0_GPIO 1 3 1 NJ 590
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 490 NJ 490 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 510 NJ 510 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 1010 350n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 450 260n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 1030 330n
+preplace netloc axi_gpio_1_GPIO 1 3 1 N 730
+levelinfo -pg 1 0 230 750 1210 1400
+pagesize -pg 1 -db -bbox -sgen -140 0 1530 960
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}
