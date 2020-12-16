@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 13 23:21:20 2020
+# Process ID: 16292
+# Current directory: C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/impl_1
+# Command line: vivado.exe -log minized_mic_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source minized_mic_wrapper.tcl -notrace
+# Log file: C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/impl_1/minized_mic_wrapper.vdi
+# Journal file: C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source minized_mic_wrapper.tcl -notrace
