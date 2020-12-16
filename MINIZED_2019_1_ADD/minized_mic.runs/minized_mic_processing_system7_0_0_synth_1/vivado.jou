@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 13 23:14:32 2020
+# Process ID: 15772
+# Current directory: C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log minized_mic_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minized_mic_processing_system7_0_0.tcl
+# Log file: C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_processing_system7_0_0_synth_1/minized_mic_processing_system7_0_0.vds
+# Journal file: C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source minized_mic_processing_system7_0_0.tcl -notrace

@@ -1,0 +1,1137 @@
+
+*** Running vivado
+    with args -log minized_mic_pdm_filt_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source minized_mic_pdm_filt_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source minized_mic_pdm_filt_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Studie/E5ADD/Newfolder/hdl-master/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.cache/ip 
+Command: synth_design -top minized_mic_pdm_filt_0_0 -part xc7z007sclg225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5540 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 740.109 ; gain = 175.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'minized_mic_pdm_filt_0_0' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/synth/minized_mic_pdm_filt_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'pdm_filt' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:268' bound to instance 'U0' of component 'pdm_filt' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/synth/minized_mic_pdm_filt_0_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_default_clock_driver' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 1 - type: integer 
+	Parameter log_2_period bound to: 1 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (1#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (2#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:212]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (3#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver__parameterized0' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 64 - type: integer 
+	Parameter log_2_period bound to: 7 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:236]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver__parameterized0' (3#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver__parameterized1' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 4096 - type: integer 
+	Parameter log_2_period bound to: 13 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:236]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:291]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver__parameterized1' (3#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_default_clock_driver' (4#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_struct' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_unipolar_to_bipolar' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'sysgen_concat_f28f7ae7b2' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:345]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_concat_f28f7ae7b2' (5#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:345]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_8e7d267405' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:370]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_8e7d267405' (6#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_xlconvert' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:464]
+	Parameter din_width bound to: 2 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter din_width bound to: 2 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_pdm_filt_xlconvert' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:408' bound to instance 'convert' of component 'convert_func_call_pdm_filt_xlconvert' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:516]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_pdm_filt_xlconvert' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:423]
+	Parameter din_width bound to: 2 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_pdm_filt_xlconvert' (7#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:423]
+	Parameter width bound to: 2 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:20' bound to instance 'reg' of component 'synth_reg' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:532]
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 2 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 2 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+	Parameter width bound to: 2 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e' (8#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (9#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_xlconvert' (10#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:464]
+INFO: [Synth 8-638] synthesizing module 'sysgen_inverter_6d666fb85e' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:567]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_inverter_6d666fb85e' (11#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:567]
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_unipolar_to_bipolar' (12#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_xlceprobe' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:71]
+	Parameter d_width bound to: 16 - type: integer 
+	Parameter q_width bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'buf_comp' to cell 'BUF' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_xlceprobe' (13#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_8e0b665c0fbdaa5012b8b3a78d0f3ea2' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:625]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized1' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 21 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 21 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized1' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 21 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized1' (13#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized1' (13#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized2' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized3' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized3' (13#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized2' (13#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-3491] module 'pdm_filt_fir_compiler_v7_2_i0' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i0/synth/pdm_filt_fir_compiler_v7_2_i0.vhd:59' bound to instance 'pdm_filt_fir_compiler_v7_2_i0_instance' of component 'pdm_filt_fir_compiler_v7_2_i0' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:689]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_fir_compiler_v7_2_i0' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i0/synth/pdm_filt_fir_compiler_v7_2_i0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: pdm_filt_fir_compiler_v7_2_i0 - type: string 
+	Parameter C_COEF_FILE bound to: pdm_filt_fir_compiler_v7_2_i0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 640 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 64 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 1171 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 3 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 1 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 2 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 2 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 2 - type: string 
+	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 25 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 21 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 21 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 25 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 1 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 10 - type: integer 
+	Parameter C_INPUT_RATE bound to: 64 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 4096 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 1 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 20 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_12' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd:61264' bound to instance 'U0' of component 'fir_compiler_v7_2_12' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i0/synth/pdm_filt_fir_compiler_v7_2_i0.vhd:201]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_fir_compiler_v7_2_i0' (26#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i0/synth/pdm_filt_fir_compiler_v7_2_i0.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_8e0b665c0fbdaa5012b8b3a78d0f3ea2' (27#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:625]
+INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_010a411783fc1134e3d7952b43113c76' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:726]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized3' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized5' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized5' (27#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized3' (27#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-3491] module 'pdm_filt_fir_compiler_v7_2_i1' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i1/synth/pdm_filt_fir_compiler_v7_2_i1.vhd:59' bound to instance 'pdm_filt_fir_compiler_v7_2_i1_instance' of component 'pdm_filt_fir_compiler_v7_2_i1' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:790]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_fir_compiler_v7_2_i1' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i1/synth/pdm_filt_fir_compiler_v7_2_i1.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: pdm_filt_fir_compiler_v7_2_i1 - type: string 
+	Parameter C_COEF_FILE bound to: pdm_filt_fir_compiler_v7_2_i1.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 304 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 0 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 1 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 607 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 3 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 1 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 14 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 14 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 14 - type: string 
+	Parameter C_DATA_WIDTH bound to: 14 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 31 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 31 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 1 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 304 - type: integer 
+	Parameter C_INPUT_RATE bound to: 4096 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 4096 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 1 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 313 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_12' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd:61264' bound to instance 'U0' of component 'fir_compiler_v7_2_12' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i1/synth/pdm_filt_fir_compiler_v7_2_i1.vhd:201]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_fir_compiler_v7_2_i1' (30#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i1/synth/pdm_filt_fir_compiler_v7_2_i1.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_010a411783fc1134e3d7952b43113c76' (31#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:726]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_xlrequantize' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:278]
+	Parameter din_width bound to: 21 - type: integer 
+	Parameter din_bin_pt bound to: 11 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 14 - type: integer 
+	Parameter dout_bin_pt bound to: 11 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter old_width bound to: 21 - type: integer 
+	Parameter old_bin_pt bound to: 11 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 14 - type: integer 
+	Parameter new_bin_pt bound to: 11 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'sub_entity_pdm_filt_xlrequantize' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:106' bound to instance 'convert' of component 'sub_entity_pdm_filt_xlrequantize' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'sub_entity_pdm_filt_xlrequantize' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:129]
+	Parameter old_width bound to: 21 - type: integer 
+	Parameter old_bin_pt bound to: 11 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 14 - type: integer 
+	Parameter new_bin_pt bound to: 11 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter width bound to: 23 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:20' bound to instance 'reg_fpr' of component 'synth_reg' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized1' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 23 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 23 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized1' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+	Parameter width bound to: 23 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized1' (31#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized1' (31#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 23 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:20' bound to instance 'reg_qr' of component 'synth_reg' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:191]
+	Parameter width bound to: 14 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:20' bound to instance 'reg_out' of component 'synth_reg' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized3' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 14 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 14 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized3' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+	Parameter width bound to: 14 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized3' (31#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized3' (31#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sub_entity_pdm_filt_xlrequantize' (32#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_xlrequantize' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'pdm_filt_xlrequantize__parameterized0' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:278]
+	Parameter din_width bound to: 16 - type: integer 
+	Parameter din_bin_pt bound to: 11 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter dout_bin_pt bound to: 13 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter old_width bound to: 16 - type: integer 
+	Parameter old_bin_pt bound to: 11 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 16 - type: integer 
+	Parameter new_bin_pt bound to: 13 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'sub_entity_pdm_filt_xlrequantize' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:106' bound to instance 'convert' of component 'sub_entity_pdm_filt_xlrequantize' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'sub_entity_pdm_filt_xlrequantize__parameterized1' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:129]
+	Parameter old_width bound to: 16 - type: integer 
+	Parameter old_bin_pt bound to: 11 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 16 - type: integer 
+	Parameter new_bin_pt bound to: 13 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter width bound to: 18 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:20' bound to instance 'reg_fpr' of component 'synth_reg' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized5' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 18 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 18 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized5' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+	Parameter width bound to: 18 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized5' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized5' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 20 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:20' bound to instance 'reg_qr' of component 'synth_reg' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized7' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 20 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 20 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized7' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+	Parameter width bound to: 20 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:75]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized7' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized7' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:20' bound to instance 'reg_out' of component 'synth_reg' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized9' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized9' [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized9' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized9' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sub_entity_pdm_filt_xlrequantize__parameterized1' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_xlrequantize__parameterized0' (33#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt_entity_declarations.vhd:278]
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt_struct' (34#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'pdm_filt' (35#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ipshared/9322/hdl/pdm_filt.vhd:276]
+INFO: [Synth 8-256] done synthesizing module 'minized_mic_pdm_filt_0_0' (36#1) [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/synth/minized_mic_pdm_filt_0_0.vhd:68]
+WARNING: [Synth 8-3331] design synth_reg__parameterized9 has unconnected port clr
+WARNING: [Synth 8-3331] design synth_reg__parameterized7 has unconnected port clr
+WARNING: [Synth 8-3331] design synth_reg__parameterized5 has unconnected port clr
+WARNING: [Synth 8-3331] design synth_reg__parameterized3 has unconnected port clr
+WARNING: [Synth 8-3331] design synth_reg__parameterized1 has unconnected port clr
+WARNING: [Synth 8-3331] design delay__parameterized26 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design buff has unconnected port RE
+WARNING: [Synth 8-3331] design buff has unconnected port SCLR
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized16 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized16 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized16 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized16 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized16 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized28 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized28 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized28 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized28 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized28 has unconnected port CLK
+WARNING: [Synth 8-3331] design calc__parameterized0 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design calc__parameterized0 has unconnected port CED
+WARNING: [Synth 8-3331] design delay__parameterized27 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized27 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized27 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized14 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized14 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized14 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized14 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized14 has unconnected port CLK
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][57]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][56]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][55]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][54]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][53]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][52]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][51]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][50]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][49]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[fab][48]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][62]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][61]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][60]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][59]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][58]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][57]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][56]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][55]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][54]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][53]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][52]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][51]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][50]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][49]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port POUT[casc][48]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][57]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][56]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][55]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][54]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][53]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][52]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][51]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][50]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][49]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][48]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][47]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][46]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][45]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][44]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][43]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][42]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][41]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][40]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][39]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][38]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][37]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][36]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][35]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][34]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][33]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][32]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][31]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][30]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][29]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][28]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][27]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][26]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][25]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][24]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][23]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][22]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][21]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][20]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][19]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][18]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][17]
+WARNING: [Synth 8-3331] design addsub_mult_accum__parameterized0 has unconnected port PIN[fab][16]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:01:12 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/constrs/pdm_filt.xdc] for cell 'U0'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/constrs/pdm_filt.xdc:6]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/constrs/pdm_filt.xdc:8]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/constrs/pdm_filt.xdc:10]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/constrs/pdm_filt.xdc:12]
+Finished Parsing XDC File [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/constrs/pdm_filt.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/constrs/pdm_filt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minized_mic_pdm_filt_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minized_mic_pdm_filt_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0'
+Finished Parsing XDC File [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0'
+Parsing XDC File [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0'
+Finished Parsing XDC File [c:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.srcs/sources_1/bd/minized_mic/ip/minized_mic_pdm_filt_0_0/pdm_filt_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0'
+Parsing XDC File [C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_pdm_filt_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_pdm_filt_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_pdm_filt_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minized_mic_pdm_filt_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minized_mic_pdm_filt_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 978.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 117 instances were transformed.
+  BUF => LUT1: 1 instances
+  FDE => FDRE: 116 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 978.777 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_pdm_filt_0_0_synth_1/dont_touch.xdc, line 15).
+Applied set_property DONT_TOUCH = true for U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0. (constraint file  C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_pdm_filt_0_0_synth_1/dont_touch.xdc, line 18).
+Applied set_property DONT_TOUCH = true for U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0. (constraint file  C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_pdm_filt_0_0_synth_1/dont_touch.xdc, line 21).
+Applied set_property DONT_TOUCH = true for U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7031] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-7031] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-3971] The signal "dpt_mem:/gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "dpt_mem__parameterized0:/gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[0].g_others.i_delay' (delay__parameterized5) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[1].g_others.i_delay'
+INFO: [Synth 8-223] decloning instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay' (delay__parameterized7) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay'
+INFO: [Synth 8-223] decloning instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[0].i_delay' (delay__parameterized5) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[1].i_delay'
+INFO: [Synth 8-223] decloning instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[4].i_delay' (delay__parameterized7) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3971] The signal "U0/\pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem /gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/\pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance /U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem /gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pdm_filt_default_clock_driver/clockdriver_x0/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pdm_filt_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pdm_filt_struct/requantize1/convert/latency_qr.reg_qr/partial_one.last_srlc33e/reg_array[0].fde_used.u2 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pdm_filt_struct/requantize1/convert/latency_qr.reg_qr/partial_one.last_srlc33e/reg_array[1].fde_used.u2 )
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver_x1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver_x0/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver_x0/pipelined_ce_logic.ce_logic_pipeline[5].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver_x0/pipelined_ce_logic.ce_logic_pipeline[4].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver_x0/pipelined_ce_logic.ce_logic_pipeline[3].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver_x0/pipelined_ce_logic.ce_logic_pipeline[2].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver_x0/pipelined_ce_logic.ce_logic_pipeline[1].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[5].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[4].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[3].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[2].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[1].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_struct/fir_7_2/m_axis_data_tvalid_ps_net_synchronizer_1/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_struct/fir_7_2/m_axis_data_tvalid_ps_net_synchronizer_2/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_struct/fir_7_2_1/m_axis_data_tvalid_ps_net_synchronizer_1/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_struct/fir_7_2_1/m_axis_data_tvalid_ps_net_synchronizer_2/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_struct/requantize1/convert/latency_qr.reg_qr/partial_one.last_srlc33e/reg_array[0].fde_used.u2) is unused and will be removed from module pdm_filt.
+WARNING: [Synth 8-3332] Sequential element (pdm_filt_struct/requantize1/convert/latency_qr.reg_qr/partial_one.last_srlc33e/reg_array[1].fde_used.u2) is unused and will be removed from module pdm_filt.
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_spare_cycle_rnd/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_spare_cycle_rnd/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_spare_cycle_rnd/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_spare_cycle_rnd/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_spare_cycle_rnd/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[6]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[7]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[9]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[0]' (FDE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[20]' (FDRE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[21]' (FDRE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[22]' (FDRE) to 'U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg )
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]' (FDRE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]' (FDRE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[6]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[7]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[9]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[0]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance /U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[8]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[9]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[10]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[11]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[12]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[13]' (FDE) to 'U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.d_out_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance /U0/i_synth/\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:34 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/pdm_filt_struct/fir_7_2/pdm_filt_fir_compiler_v7_2_i0_instance/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/i_0/gen_bram.gen_rom.gen_double_reg.do_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/pdm_filt_struct/fir_7_2_1/pdm_filt_fir_compiler_v7_2_i1_instance/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/i_0/gen_bram.gen_rom.gen_double_reg.do_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:02:00 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:02:00 . Memory (MB): peak = 978.777 ; gain = 414.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:02:00 . Memory (MB): peak = 985.379 ; gain = 420.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:02:05 . Memory (MB): peak = 992.676 ; gain = 427.945
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:02:05 . Memory (MB): peak = 992.676 ; gain = 427.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:02:05 . Memory (MB): peak = 992.676 ; gain = 427.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:02:05 . Memory (MB): peak = 992.676 ; gain = 427.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:02:05 . Memory (MB): peak = 992.676 ; gain = 427.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:02:05 . Memory (MB): peak = 992.676 ; gain = 427.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUF        |     1|
+|2     |CARRY4     |    18|
+|3     |DSP48E1    |     2|
+|4     |LUT1       |    27|
+|5     |LUT2       |    38|
+|6     |LUT3       |    34|
+|7     |LUT4       |    24|
+|8     |LUT5       |    24|
+|9     |LUT6       |    29|
+|10    |RAM128X1D  |     4|
+|11    |RAMB18E1_4 |     1|
+|12    |RAMB18E1_5 |     1|
+|13    |RAMB18E1_6 |     1|
+|14    |RAMB18E1_7 |     1|
+|15    |SRL16E     |    46|
+|16    |FDE        |   114|
+|17    |FDRE       |   312|
+|18    |FDSE       |     6|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:02:05 . Memory (MB): peak = 992.676 ; gain = 427.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 97 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:02:00 . Memory (MB): peak = 992.676 ; gain = 427.945
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:02:05 . Memory (MB): peak = 992.676 ; gain = 427.945
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 992.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 118 instances were transformed.
+  FDE => FDRE: 114 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+296 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:35 ; elapsed = 00:02:19 . Memory (MB): peak = 992.676 ; gain = 676.570
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 992.676 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_pdm_filt_0_0_synth_1/minized_mic_pdm_filt_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP minized_mic_pdm_filt_0_0, cache-ID = ef05b324f6ee35ea
+INFO: [Coretcl 2-1174] Renamed 101 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 992.676 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/solbj/AppData/Roaming/Xilinx/Projects/minized_mic/MINIZED_2019_1/minized_mic.runs/minized_mic_pdm_filt_0_0_synth_1/minized_mic_pdm_filt_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file minized_mic_pdm_filt_0_0_utilization_synth.rpt -pb minized_mic_pdm_filt_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 13 23:17:08 2020...
